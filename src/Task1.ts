@@ -32,5 +32,6 @@ else{
     console.log("candidate work location is not chennai");
     }
 //question 5
+
 let Annualsalary:number=salary*12;
 
