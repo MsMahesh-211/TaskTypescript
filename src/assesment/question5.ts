@@ -33,9 +33,9 @@ for (let day = 0; day<6;day++) {
     console.log("Sales :", monthlySales[day]);
 
     totalSales = totalSales + monthlySales[day];
+}
 
-
-    if () {
+if () {
         bestSales = monthlySales[day];
     }
 
