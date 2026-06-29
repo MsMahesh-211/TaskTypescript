@@ -46,7 +46,14 @@ if (average >=90) {
 
 console.log("Assessment Completed");
 
-
+// //Student Name : Rahul
+// Department : Computer Science
+// Total Marks : 419
+// Average : 83.8
+// Grade : A
+// Updated Average : 85.8
+// Good Performance
+// Assessment Completed
 
 
 

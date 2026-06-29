@@ -21,7 +21,7 @@ let totalSales: number = 0;
 let incentive: number = 0;
 let penalty: number = 0;
 let highSalesDays: number = 0;
-let bestSales: number = ______________________;
+let bestSales: number =0;
 let commission: number = 0;
 
 console.log("Employee Name :", employeeName);

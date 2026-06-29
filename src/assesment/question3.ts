@@ -7,8 +7,8 @@ const basicSalary: number = 28000;
 const hra: number = 4000;
 const medicalAllowance: number = 2000;
 
-// Missing Line 1
-const grossSalary: number = ______________________________;
+// Missing Line 1-Fixed;
+const grossSalary: number = basicSalary+hra+medicalAllowance;
 
 console.log("Company Name :", companyName);
 console.log("Employee ID :", employeeId);
@@ -17,64 +17,62 @@ console.log("HRA :", hra);
 console.log("Medical Allowance :", medicalAllowance);
 console.log("Gross Salary :", grossSalary);
 
-// Missing Line 2
-if (_____________________________________) {
+// Missing Line 2-Fixed
+if (grossSalary<=30000) {
     console.log("Salary Grade : A");
 } else {
     console.log("Salary Grade : B");
 }
 
-// Missing Line 3
+// Missing Line 3-Fixed
 const employee = {
-    id: ____________________,
+    id: 101,
     name: "Alex",
-    salary: ____________________
+    salary: 34000
 };
 
 console.log("Employee ID :", employee.id);
 console.log("Employee Name :", employee.name);
 console.log("Current Salary :", employee.salary);
 
-// Missing Line 4
-_________________________________________;
+// Missing Line 4-Fixed
+const UpdatedSalary = grossSalary + 5000;
 
 console.log("Updated Salary :", employee.salary);
 
-// Missing Line 5
-const annualSalary = ____________________________________;
+// Missing Line 5-Fixed
+const annualSalary = grossSalary * 12;
 
 console.log("Annual Salary :", annualSalary);
 
-// Missing Line 6
-if (_____________________________________) {
+// Missing Line 6-Fixed
+if(grossSalary>=40000) {
     console.log("Bonus : Eligible");
 } else {
     console.log("Bonus : Not Eligible");
 }
 
-// Missing Line 7
-const tax = ____________________________________;
+// Missing Line 7-Fixed
+const tax = 1000;
 
 console.log("Tax Amount :", tax);
 
-// Missing Line 8
-const netSalary = ____________________________________;
+// Missing Line 8-Fixed
+const netSalary = grossSalary - tax;
 
 console.log("Net Salary :", netSalary);
 
 // Missing Line 9
-if (_____________________________________) {
+if (netSalary>=40000) {
     console.log("Performance Rating : Excellent");
 } else {
     console.log("Performance Rating : Good");
 }
 
-// Missing Line 10
-console.log("Final Employee Salary :", ____________________);
+// Missing Line 10 -Fixed
+console.log("Final Employee Salary:",netSalary);
 
 console.log("Interview Completed");
-
-//output
 
 // Company Name : OpenAI
 // Employee ID : 101
@@ -86,11 +84,11 @@ console.log("Interview Completed");
 // Employee ID : 101
 // Employee Name : Alex
 // Current Salary : 34000
-// Updated Salary : 37000
-// Annual Salary : 444000
+// Updated Salary : 34000
+// Annual Salary : 408000
 // Bonus : Not Eligible
-// Tax Amount : 3700
-// Net Salary : 33300
+// Tax Amount : 1000
+// Net Salary : 33000
 // Performance Rating : Good
-// Final Employee Salary : 33300
+// Final Employee Salary: 33000
 // Interview Completed
