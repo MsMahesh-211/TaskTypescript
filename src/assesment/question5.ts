@@ -27,14 +27,15 @@ let commission: number = 0;
 console.log("Employee Name :", employeeName);
 console.log("--------------------------------");
 
-for (let day = ______________________; day ______________________; day++) {
+for (let day = 0; day<6;day++) {
 
     console.log("Day :", day + 1);
-    console.log("Sales :", ______________________);
+    console.log("Sales :", monthlySales[day]);
 
-    ________________________________;
+    totalSales = totalSales + monthlySales[day];
 
-    if (______________________________) {
+
+    if () {
         bestSales = monthlySales[day];
     }
 
