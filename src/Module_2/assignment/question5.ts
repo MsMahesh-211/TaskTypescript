@@ -27,50 +27,53 @@ let commission: number = 0;
 console.log("Employee Name :", employeeName);
 console.log("--------------------------------");
 
-for (let day = 0; day<6;day++) {
+for (let day = 0; day < monthlySales.length; day++) {
 
     console.log("Day :", day + 1);
     console.log("Sales :", monthlySales[day]);
 
-    totalSales = totalSales + monthlySales[day];
+    totalSales += monthlySales[day]!;
+
+
+if (monthlySales[day]! > bestSales) {
+    bestSales = monthlySales[day]!;
 }
 
-if () {
-        bestSales = monthlySales[day];
-    }
 
-    if (______________________________) {
+    if (monthlySales[day]! >= 15000) {
 
         console.log("Excellent Sales");
 
-        ________________________________;
-        ________________________________;
+    incentive = incentive + 1000;
+    highSalesDays++;;
+        
 
-    } else if (______________________________) {
+    } else if (monthlySales[day]! >= 10000) {
 
         console.log("Good Sales");
+        incentive = incentive + 1000;
+        highSalesDays++;;
 
-        ________________________________;
-        ________________________________;
+        
+        
 
     } else {
 
         console.log("Poor Sales");
 
-        ________________________________;
+        penalty = penalty + 200;
 
     }
 
     console.log("--------------------------------");
 }
 
-commission = ________________________________;
+commission =0.05 * totalSales;
 
 const averageSales =
-    ________________________________;
+    totalSales / monthlySales.length;
 
-const finalSalary =
-    ________________________________;
+const finalSalary =incentive + commission - penalty;
 
 console.log("Total Sales :", totalSales);
 console.log("Average Sales :", averageSales);
@@ -81,15 +84,17 @@ console.log("Penalty :", penalty);
 console.log("Commission :", commission);
 
 if (
-    ________________________________ &&
-    ________________________________ &&
-    ________________________________
+    totalSales >= monthlyTarget &&
+    highSalesDays >= 4 &&
+    averageSales >= 12000
 ) {
 
     console.log("Employee Rating : Outstanding");
 
 } else if (
-    ________________________________
+    totalSales >= monthlyTarget &&
+    highSalesDays >= 3 &&
+    averageSales >= 10000
 ) {
 
     console.log("Employee Rating : Excellent");
@@ -105,7 +110,6 @@ console.log("Final Salary :", finalSalary);
 console.log("Assessment Completed");
 
 
-//Output 
 // Employee Name : Alex
 // --------------------------------
 // Day : 1
@@ -136,8 +140,9 @@ console.log("Assessment Completed");
 // Average Sales : 12000
 // Highest Sales : 18000
 // High Sales Days : 4
-// Incentive : 6000
-// Penalty : 1000
+// Incentive : 4000
+// Penalty : 400
 // Commission : 3600
-// Employee Rating : Excellent
-// Final Salary : 38600
+// Employee Rating : Outstanding
+// Final Salary : 7200
+// Assessment Completed
